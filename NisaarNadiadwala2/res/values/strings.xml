@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Nisaar Nadiadwala</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="about_nisaar"><b>Nisar Nadiadwala</b> was born on 10 March 1962. He is well known as a public speaker on Islam and interfaith dialogues in India. He has worked in the Research Department at the Islamic Research Foundation (IRF) as an Executive and then Head of the Department from 2001 to 2013.\n\n
+        Nadiadwala has held many workshops and lectures in India and some other countries. Besides Islam and Interfaith Dialogues, he also speaks on economics, social issues and other subjects. In June 2007, he attended the Interfaith Dialogue Committee Conference at Mecca, Saudi Arabia, and then in July 2008, at Madrid, Spain, hosted by Saudi King Abdullah.\n Besides dawah, Nisaar Nadiadwala has served as a senior speaker at Islamic Research Foundation in Mumbai. After participating in the Dawah Training Program in 1998 which was conducted by Zakir Naik personally, Nadiadwala participated in every Dawah Training Program as one of the main faculty. \n\n
+        Nisar Nadiadwala discovered that he had a flair for writing during his early college days. Unfortunately, not many Undergraduate education or graduate courses in journalism were available during the early 1980s in Mumbai, so the next best option for him was to apprentice under a senior writer. He served as an assistant to notable Gujarati investigative writer and reporter, Kanti Bhatt.\nNadiadwala also served as a reporter and writer for the well-known Gujarati weekly Abhiyaan, published in Mumbai with a circulation of around sixty thousand in 1986.\n\n
+        Nadiadwala has been writing notes extensively for young Muslims on his Facebook page and blog. His primary focus has been on sociology, education, economics, youth issues and their solutions from an Islamic perspective. His notes are read and shared by at least 50,000 readers. Till date, he has written more than five hundred Facebook notes.\n\n
+        Nisar Nadiadwala launched Trainer\'s Gallery, an institute to bring out the best talents in communication skills among the Muslim youth. The institute conducts career oriented courses and hobby courses in both, the electronic as well as the print media. He has designed a special course for those Muslims who want to lean effective writing for news papers, magazines, blogs, websites and books.\n\n
+        Being an experienced trainer in Islamic public speaking, Nisar Nadiadwala also holds expertise in training Muslim youth in participating in interfaith dialogues. These training workshops run from two days to two weeks in which he trains his students in public speaking, panel discussions and anchoring Islamic radio and TV programs.\n</string>
+    <string name="title_activity_grid">GridActivity</string>
+	<string-array name="testList">
+	    <item>TEst</item>
+	    <item>TEst</item>
+	    <item>TEst</item>
+	    <item>TEst</item>
+	    <item>TEst</item>
+	    <item>TEst</item>
+	    
+	</string-array>
+	
+	<string name="site_url">http://216.12.194.26/~alamaana/nisaar/</string>
+	<string name="app_id">646802182084418</string>
+</resources>

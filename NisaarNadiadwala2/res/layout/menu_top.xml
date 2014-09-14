@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFf1f1f1"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bConnectService"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_connect"
+        android:textColor="@color/fbutton_color_clouds"
+        android:drawableLeft="@drawable/ic_facebook_ic"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Connect to Facebook" 
+        android:tag="b1"/>
+       
+
+    <Button
+        android:id="@+id/bShareFB"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_connect"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fbutton_color_clouds"
+        android:drawableLeft="@drawable/ic_facebook_ic"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Share to Facebook"
+        android:tag="b2" />
+
+    <Button
+        android:id="@+id/bShareOther"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_permission"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fbutton_color_clouds"
+        android:drawableLeft="@drawable/share_icon"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Share via other services"
+        android:tag="b3" />
+
+</LinearLayout>

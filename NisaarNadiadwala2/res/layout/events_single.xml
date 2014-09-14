@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundedcorners"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvEventsTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/notes_back"
+                android:lines="1"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:scrollHorizontally="true"
+                android:text="Title"
+                android:textIsSelectable="true"
+                android:textSize="22sp"
+                android:textAppearance="@android:style/TextAppearance.Large" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/notes_back"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/tvEventsTimeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:text="Date:"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp"
+                    android:textAppearance="@android:style/TextAppearance.Large" />
+
+                <TextView
+                    android:id="@+id/tvEventsTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:text="given time"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/notes_back"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/tvEventsVenueTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:text="Venue:"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp"
+                    android:textAppearance="@android:style/TextAppearance.Large"/>
+
+                <TextView
+                    android:id="@+id/tvEventsVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:text="given venue"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/notes_back"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="12dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/tvEventsDescriptionTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:text="Description:"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp"
+                    android:textAppearance="@android:style/TextAppearance.Large"/>
+
+                <TextView
+                    android:id="@+id/tvEventsDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:text="given description"
+                    android:textIsSelectable="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bAddCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:text="Add to calendar"
+            android:drawableLeft="@drawable/cal_icon" 
+            android:paddingLeft="8dp"
+            android:paddingRight="20dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/cal_share_button_back"/>
+    </LinearLayout>
+
+</LinearLayout>
