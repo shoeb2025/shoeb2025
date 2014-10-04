@@ -1,5 +1,6 @@
 package com.alamaanah.nisaarnadiadwala;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -23,6 +24,7 @@ import android.widget.Toast;
 
 import com.androidquery.AQuery;
 import com.androidquery.callback.AjaxStatus;
+import com.fedorvlasov.lazylist.ImageLoader;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
@@ -33,6 +35,7 @@ public class Home extends ActionBarActivity implements OnClickListener {
 	Button about, notes, events, books;
 	ImageView name;
 	Fx anim;
+	ImageLoader clear;
 	public static final String EXTRA_MESSAGE = "message";
 	public static final String PROPERTY_REG_ID = "registration_id";
 	private static final String PROPERTY_APP_VERSION = "appVersion";
@@ -55,6 +58,7 @@ public class Home extends ActionBarActivity implements OnClickListener {
 		//ActionBar ab = getSupportActionBar();
 		//ab.hide();
 		
+		clear=new ImageLoader(context);
 		name=(ImageView)findViewById(R.id.ivName);
 		anim=new Fx();
 		anim.slide_in_left(context2, name);
@@ -253,5 +257,49 @@ public class Home extends ActionBarActivity implements OnClickListener {
 			
 		}
 	}
+	@Override
+	   protected void onStop(){
+	      super.onStop();
+	   }
+
+	   //Fires after the OnStop() state
+	   @Override
+	   protected void onDestroy() {
+	      super.onDestroy();
+	      clear.clearCache();
+	      try {
+	         trimCache(this);
+	      } catch (Exception e) {
+	         // TODO Auto-generated catch block
+	         e.printStackTrace();
+	      }
+	   }
+
+	   public static void trimCache(Context context) {
+	      try {
+	         File dir = context.getCacheDir();
+	         if (dir != null && dir.isDirectory()) {
+	            deleteDir(dir);
+	         }
+	      } catch (Exception e) {
+	         // TODO: handle exception
+	      }
+	   }
+
+	   public static boolean deleteDir(File dir) {
+	      if (dir != null && dir.isDirectory()) {
+	         String[] children = dir.list();
+	         for (int i = 0; i < children.length; i++) {
+	            boolean success = deleteDir(new File(dir, children[i]));
+	            if (!success) {
+	               return false;
+	            }
+	         }
+	      }
+
+	      // The directory is now empty so delete it
+	      return dir.delete();
+	   }
+
 
 }

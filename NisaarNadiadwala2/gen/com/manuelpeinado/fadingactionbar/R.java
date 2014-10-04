@@ -8,9 +8,9 @@ package com.manuelpeinado.fadingactionbar;
 
 public final class R {
 	public static final class drawable {
-		public static final int fab__gradient = 0x7f0200ac;
-		public static final int fab__gradient_light = 0x7f0200ad;
-		public static final int listview_back = 0x7f0200b7;
+		public static final int fab__gradient = 0x7f0200ad;
+		public static final int fab__gradient_light = 0x7f0200ae;
+		public static final int listview_back = 0x7f0200b8;
 	}
 	public static final class id {
 		public static final int fab__container = 0x7f060093;

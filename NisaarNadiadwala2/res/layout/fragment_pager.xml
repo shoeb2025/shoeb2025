@@ -15,7 +15,7 @@
         android:id="@+id/rlTutorial" 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#9922313F"
+        android:background="#90000000"
         android:visibility="gone"
         >
         

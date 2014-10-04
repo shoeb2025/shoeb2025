@@ -24,6 +24,7 @@ import android.widget.Toast;
 import com.androidquery.AQuery;
 import com.androidquery.callback.AjaxCallback;
 import com.androidquery.callback.AjaxStatus;
+import com.fedorvlasov.lazylist.ImageLoader;
 import com.google.gson.Gson;
 import com.manuelpeinado.fadingactionbar.FadingActionBarHelper;
 
@@ -48,6 +49,8 @@ public class Notes extends ActionBarActivity implements OnItemClickListener{
 		boolean tutorial;
 		if (db.getBoolean("tutorial")==false)
 			db.putBoolean("tutorial", false);
+		
+		
 		
 		init();
 	}
@@ -162,7 +165,7 @@ public class Notes extends ActionBarActivity implements OnItemClickListener{
 	@Override
 	public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
 		// TODO Auto-generated method stub
-		//Toast.makeText(getApplicationContext(), "The position is"+position, Toast.LENGTH_LONG).show();
+		Toast.makeText(getApplicationContext(), "Loading...",Toast.LENGTH_SHORT).show();
 		Intent read = new Intent(context, NotesViewPager.class);
 		read.putParcelableArrayListExtra("notes", notes_data);
 		read.putExtra("position",position-1);
